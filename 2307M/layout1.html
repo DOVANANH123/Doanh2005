@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Layout with CSS</title>
+    <style type="text/css">
+      /*Dau "*" ap dung toan bo html*/
+      * {
+        color: rgb(85, 211, 108);
+        text-align: center;
+        font-family: sans-serif;
+      }
+      /*Selector "Tags"*/
+      body {
+        width: 960px;
+        margin: auto;
+      }
+      #content {
+        height: 100%;
+        overflow: auto;
+      }
+      #nav,
+      #feature,
+      #footer {
+        padding: 10px;
+        margin: 10px;
+        background-color: #6d7089;
+      }
+      .column1,
+      .column2,
+      .column3 {
+        background-color: rgb(246, 255, 196);
+        float: left;
+        width: 300px;
+      }
+      li {
+        display: inline;
+        padding: 10px;
+      }
+      #footer {
+        margin-top: 250px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="header">
+      <h1>Logo</h1>
+      <div id="nav">
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Product</a></li>
+          <li><a href="#">Servies</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">content</a></li>
+        </ul>
+      </div>
+    </div>
+    <div id="content"></div>
+    <div id="feature"><p>feature</p></div>
+    <div class="artical column1"><p>column 1</p></div>
+    <div class="artical column2"><p>column 2</p></div>
+    <div class="artical column3"><p>column 3</p></div>
+    <div id="footer"></div>
+    <p>&copy; copyright by Fpt Aptech</p>
+  </body>
+</html>
