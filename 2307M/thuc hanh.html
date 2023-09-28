@@ -3,13 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="css/style.css">
-    <title>Registration</title>
-    <h1>Registration</h1>
-    <hr/>
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,600' rel='stylesheet' type='text/css'>
+    <link href="//netdna.bootstrapcdn.com/font-awesome/3.1.1/css/font-awesome.css" rel="stylesheet">
     <style>
-    body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
+        body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, 
 pre, form, fieldset, input, textarea, p, blockquote, th, td { 
   padding:0;
   margin:0;}
@@ -196,48 +193,37 @@ a.button:hover {
   
 }
 
-
     </style>
-    <input type="checkbox">
-    Personal 
-    <input type="checkbox">
-    Company
-    <hr/>
-   <!-- Email imput -->
-    <div>
-        <i class="fa-regular fa-envelope"></i>
-        <label for="Email"></label>
-        <input
-            type="email"
-            name="Email"
-            id="email"
-            placeholder="Email">
+    <div class="testbox">
+      <h1>Registration</h1>
+    
+      <form action="/">
+          <hr>
+        <div class="accounttype">
+          <input type="radio" value="None" id="radioOne" name="account" checked/>
+          <label for="radioOne" class="radio" chec>Personal</label>
+          <input type="radio" value="None" id="radioTwo" name="account" />
+          <label for="radioTwo" class="radio">Company</label>
+        </div>
+      <hr>
+      <label id="icon" for="name"><i class="icon-envelope "></i></label>
+      <input type="text" name="name" id="name" placeholder="Email" required/>
+      <label id="icon" for="name"><i class="icon-user"></i></label>
+      <input type="text" name="name" id="name" placeholder="Name" required/>
+      <label id="icon" for="name"><i class="icon-shield"></i></label>
+      <input type="password" name="name" id="name" placeholder="Password" required/>
+      <div class="gender">
+        <input type="radio" value="None" id="male" name="gender" checked/>
+        <label for="male" class="radio" chec>Male</label>
+        <input type="radio" value="None" id="female" name="gender" />
+        <label for="female" class="radio">Female</label>
+       </div> 
+       <p>By clicking Register, you agree on our <a href="#">terms and condition</a>.</p>
+       <a href="#" class="button">Register</a>
+      </form>
     </div>
-    <!-- Name imput -->
-    <div>
-        <i class="fa-solid fa-user"></i>
-        <label for="Name"></label>
-        <input 
-        type="text"
-        name="Name"
-        id="Name"
-        placeholder="Name">
-    </div>
-    <!-- password imput -->
-    <div>
-        <i class="fa-solid fa-shield-halved"></i>
-        <label for="Password"></label>
-        <input type="password" 
-        name="Password"
-        id="Password"
-        placeholder="Password">
-    </div>
-    <input type="checkbox">
-    Male
-    <input type="checkbox">
-    Female<br/>
-    By clicking Register, you<br/>agree on our terms and condition<br/>
-    <button type="submit">Register</button>
+        </form>
+      </div>
 </head>
 <body>
     
