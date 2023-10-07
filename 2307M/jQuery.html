@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript and jQuery Example</title>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.1/jquery.min.js"
+      integrity="sha512-chZc2Mx8B1GzGSNMfJRH63jW7uYZXzX0a/UlWRrTvl4kxxYqUHNMtyTTA5IDQ7gTl4ATLoXlZthsialW3muS0A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+  </head>
+  <body>
+    <script>
+      // <!-- jQuery Template: Mau dung chung cua jQuery -->
+      // Run
+      // $(document).ready(function(){
+      // Your jQuery script here
+      // });
+    </script>
+    <script>
+      $(document).ready(function () {
+        $("#hello").html("Hello, world"); //id
+        $(".red")
+          .before("<p>Before</p>") //class
+          .after("<p>Apfter</p>");
+        $("p").prepend("tagname matched");
+        $("h2").addClass("green");
+      });
+    </script>
+    <style>
+      .green {
+        color: green;
+      }
+      .red {
+        color: blue;
+      }
+    </style>
+    <h1 id="hello">Hi!</h1>
+    <p class="red">Second line</p>
+    <h2>Hello h2</h2>
+  </body>
+</html>

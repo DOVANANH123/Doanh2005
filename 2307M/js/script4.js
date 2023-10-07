@@ -12,6 +12,8 @@ function changeHeading1(){
     // document.write("<p>Hello new p  tag</p>");
     const newElm = document.createElement('p');
     newElm.textContent="Hello new P"
+    elm.after(newElm);
+    console.log(elm);
 }
 function changeHeading2(){
     const elms = document.getElementsByTagName("h2");//Array of Elements
@@ -21,7 +23,7 @@ function changeHeading2(){
 console.log(elms);
 }
 function changeParagraph(){
-    const elms = document.getElementsByClasName("para");//Array of Elements
+    const elms = document.getElementsByClassName('para');//Array of Elements
     for(const elm of elms){
      elm.textContent="Hello again";
     }

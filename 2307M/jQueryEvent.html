@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript and jQuery Example</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.2/jquery.min.js" integrity="sha512-eqClqe36bqXg9ABERfLUfLsDuC0J9sgC2ECZmEFsw5snXC7ANYMeOijlBAcRlhctHbvHx9ZERfjBteM6U27qYg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    <script>
+        // jQuery code here 
+        $(document).ready(function(){
+            $('#hello').html('click me!');
+            $('#hello').click(function(){
+              $(this).html('Hello, world!')
+              return false;
+            });
+            $('p').mouseover(function(){
+               $(this).addClass('green');
+            });
+            $('p').mouseout(function(){
+                $(this).removeClass('green');
+            });
+        });
+    </script>
+    <style>
+        /*  css stylesheet  */
+        .red{color: red;}
+        .green{color: green;}
+        .blue{color: blue;}
+    </style>
+    <h1 id="hello">&nbsp;</h1>
+    <p id="message" class="red">First line </p>
+    <p class="red">second line</p>
+    <p>Third line</p>
+</body>
+</html>
