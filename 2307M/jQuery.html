@@ -20,15 +20,31 @@
       // });
     </script>
     <script>
-      $(document).ready(function () {
-        $("#hello").html("Hello, world"); //id
-        $(".red")
-          .before("<p>Before</p>") //class
-          .after("<p>Apfter</p>");
-        $("p").prepend("tagname matched");
-        $("h2").addClass("green");
-      });
-    </script>
+        $(document).ready(function () {
+          $("#hello").html("Hello, world"); //id
+          $("#hello").click(function () {
+            $(this).html("Finger");
+            return false;
+          });
+          $("p").mouseover(function () {});
+          $("p").prepend("tagname matched ");
+          $("h2").addClass("green");
+          $(".red")
+            .before("<p>Before</p>") //class
+            .after("<p>After</p>");
+        });
+      </script>
+      <style>
+        .green {
+          color: green;
+        }
+        .red {
+          color: blue;
+        }
+      </style>
+      <h1 id="hello">Hi!</h1>
+      <p class="red">Second line</p>
+      <h2>Hello h2</h2>
     <style>
       .green {
         color: green;

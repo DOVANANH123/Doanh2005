@@ -13,6 +13,7 @@
             $('#hello').html('click me!');
             $('#hello').click(function(){
               $(this).html('Hello, world!')
+              console.log('event click test')
               return false;
             });
             $('p').mouseover(function(){
