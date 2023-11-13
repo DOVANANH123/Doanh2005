@@ -2,6 +2,7 @@ import React, {Component} from "react";
 import './style.css';
 //extand: Kế thừa
 // vd: A extand B; thì B là lớp(class) cha của A;
+//Login là kế thừa lại những method, property trong lớp Contend
 class Login extends Component
 {
     render () {
