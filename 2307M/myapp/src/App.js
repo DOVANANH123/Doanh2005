@@ -13,7 +13,7 @@ function App() {
          desc="The new product of Nike"
          price="500$"/>
        <Product
-         img="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffandy.vn%2Fproducts%2Fgiay-nike-air-force-1-low-brooklyn-cream&psig=AOvVaw0xJyHrhJvyJud6_G4FMI9Y&ust=1699759710189000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIjIwr-Au4IDFQAAAAAdAAAAABAE"
+         img ="https://static.nike.com/a/images/t_PDP_1280_v1/f_auto,q_auto:eco/99486859-0ff3-46b4-949b-2d16af2ad421/custom-nike-dunk-high-by-you-shoes.png" jsaction="VQAsE" class="sFlh5c pT0Scc iPVvYb" style="max-width: 1280px; height: 100px; margin: 0px; width: 100px;" alt="Nike Dunk High By You Custom Men's Shoes. Nike VN" jsname="kn3ccd" aria-hidden="false"
          name="Product2"
          desc="The new product of Nike"
          price="400$"

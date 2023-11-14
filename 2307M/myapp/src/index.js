@@ -1,45 +1,59 @@
-import React from 'react';
-import PropTypes from 'prop-types'
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import Login from './components/Login';
+import React from "react";
+import ReactDOM from "react-dom/client";
+// import "./index.css";
+import App from "./components/components1/App1"
+// import App from "./components/components1/App";
+// import reportWebVitals from "./ReactHooks/reportWebVitals";
+import MyAppWithProps from "./components/components1/MyAppWithProps";   
+import RegistationForm from "./components/components1/RegisterForm";
 
-class Component extends React.Component{
-  render(){
-    return(
-      <div>
-        {/* {print all props} */}
-        <h1>
-          {this.props.arrayProp}<br/>
-          {this.props.stringProp}<br/>
-          {this.props.numberProp}<br/>
-        </h1>
-      </div>
-    );
-  }
-}
-//componentClassName.propType: import Kieu (du lieu) cua cac property
-ComponentExample.propTypes = {
-  arrayProp:PropTypes.array,
-  stringProp: PropTypes.string,
-  numberProp:PropTypes.number,
-  boolProp: PropTypes.bool,
-}
-ComponentExample.defaultProps = {
-  arrayProp:['Ngoc', 'Binh', 'Thanh'],
-  stringProp:"fpt-aptech",
-  numberProp:20,
-  boolProp: true,
-}
-const root = ReactDOM.createRoot(document.getElementById('root'));
+//Nhớ lỗi chính tả
+//viết đuôi folder import đầy đủ
+
+// class Test extends React.Component {
+//   // Hàm khởi tạo object => step1 Initialization
+//   constructor(props) {
+//     //supper: gọi các phương thức khởi tạo (contructor) của lớp (class) cha.
+//     //hàm khởi tạo của lớp cha
+//     super(props);
+//     //this: gọi đối tượng(object) hiện tại của class,
+//     this.state = { hello: "world!" };
+//   }
+
+//   //Mounting
+//   componentDidMount() {
+//     console.log("componentDidMount()");
+//   }
+
+//   changeState() {
+//     this.setState({ hello: "FPT-Apptech" });
+//   }
+//   render() {
+//     return (
+//       <div>
+//         <h1>Hello{this.state.hello}</h1>
+//         <h2>
+//           <a onClick={this.changeState.bind(this)}>Click here!</a>
+//         </h2>
+//       </div>
+//     );
+//   }
+//   shouldComponentUpdate(nextProps, nextState) {
+//     console.log("shouldComponentUpdate()");
+//     return true;
+//   }
+//   componentDidUpdate() {
+//     console.log("componentDidUpdate()");
+//   }
+// }
+
+const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    {/* <App /> */}
-
-    {/* <Login></Login> */}
-    <ComponentExample/>
+    <App />
+    {/* <Test /> */}
+    {/* <MyAppWithProps></MyAppWithProps> */}
+    {/* <RegistationForm></RegistationForm> */}
   </React.StrictMode>
 );
 
