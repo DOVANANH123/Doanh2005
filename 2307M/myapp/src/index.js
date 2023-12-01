@@ -1,9 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import "./index.css";
+// import "./index.css";
 // import App from "./components/components1/App1";
-// import App from "./components//components1/App2";
-import App from "./App";
+// import App from "./components/components1/App2";
+// import App from "./App";
+import App from "./components/reactjs_exam/App.jsx";
 // import reportWebVitals from "./ReactHooks/reportWebVitals";
 // import MyAppWithProps from "./components/components1/MyAppWithProps";   
 // import RegistationForm from "./components/components1/RegisterForm";
